@@ -54,9 +54,10 @@
   position: relative;
 
   @media screen and (max-width: 879px) {
-    padding: 367px 0 26px 20px;
+    padding: 367px 0 26px 0;
     border-radius: 0;
     align-items: start;
+    background-image: url("../public/img/tokenomics/tokenomics_bg_mobile.png");
   }
 
   ul {
@@ -71,6 +72,8 @@
     @media screen and (max-width: 879px) {
       max-width: 100%;
       margin-bottom: 0;
+      padding-left: 20px;
+      padding-right: 20px;
       display: flex;
       gap: 15px;
       overflow: scroll;

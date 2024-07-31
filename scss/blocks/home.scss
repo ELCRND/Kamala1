@@ -16,6 +16,9 @@
     min-height: 640px;
     padding-bottom: 26px;
   }
+  @media screen and (max-width: 879px) {
+    background-image: url("../public/img/home/home_bg_mobile.png");
+  }
 
   &::before {
     content: "";
