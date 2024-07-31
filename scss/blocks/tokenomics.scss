@@ -1,0 +1,170 @@
+.tokenomics {
+  padding-top: 210px;
+  padding-bottom: 150px;
+  background-image: url("../public/img/common/dot_bg.png");
+  background-size: cover;
+
+  @media screen and (max-width: 879px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.tokenomics__container {
+  width: min(1280px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tokenomics__title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 180px;
+  line-height: 95%;
+  letter-spacing: -0.02em;
+  color: #000;
+  text-align: center;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 140px;
+  }
+  @media screen and (max-width: 1079px) {
+    font-size: 120px;
+  }
+  @media screen and (max-width: 879px) {
+    margin-bottom: 14px;
+    font-size: 50px;
+  }
+}
+
+.tokenomics__wrap ul::-webkit-scrollbar {
+  display: none;
+}
+
+.tokenomics__wrap {
+  padding: 45px 60px;
+  border-radius: 50px;
+  box-shadow: 0 0 31px 0 rgba(0, 0, 0, 0.5);
+  background-image: url("../public/img/tokenomics/tokenomics_bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+
+  @media screen and (max-width: 879px) {
+    padding: 367px 0 26px 20px;
+    border-radius: 0;
+    align-items: start;
+  }
+
+  ul {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 240px 240px;
+    gap: 20px 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    @media screen and (max-width: 879px) {
+      max-width: 100%;
+      margin-bottom: 0;
+      display: flex;
+      gap: 15px;
+      overflow: scroll;
+    }
+
+    li {
+      padding: 25px 30px;
+      border-radius: 30px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (max-width: 879px) {
+        min-width: 240px;
+        min-height: 180px;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 105%;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 105%;
+        text-transform: uppercase;
+        color: #000;
+      }
+    }
+  }
+}
+
+.tokenomics__token {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 879px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    translate: 0 150%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: min(591px, 100%);
+    height: 76px;
+    filter: blur(100px);
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+
+    @media screen and (max-width: 879px) {
+      display: none;
+    }
+  }
+}
+
+.token__code {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 105%;
+  text-transform: uppercase;
+  color: #fff;
+
+  @media screen and (max-width: 879px) {
+    font-size: 14px;
+    color: #000;
+    word-break: break-all;
+  }
+}
+
+.token__copy {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 105%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+
+  @media screen and (max-width: 879px) {
+    font-size: 16px;
+    color: #000;
+  }
+}
